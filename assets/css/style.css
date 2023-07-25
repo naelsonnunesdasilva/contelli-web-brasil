@@ -1,16 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
-}
-
-#logo{
-    position: relative;
-    z-index: 2;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container{
     background-image: url('../body-background.jpg');
     background-size: cover;
     padding-top: 200px;
-    margin-top: -180px;
+    margin-top: -252px;
+}
+
+.fluid-container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+header h1 {
+    text-align: center;
+    color: #0048a1;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.subheader{
+    width: 100%;
+    margin-top: -59px;
+    position: relative;
+}
+
+#logo{
+    position: relative;
+    z-index: 2;
+    margin: 0px auto;
+    display: block;
+}
+
+#login{
+    background-color: #0048a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 9px;
+    position: absolute;
+    top: 57px;
+    right: 50%;
+    margin-right: -229px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    z-index: 3;
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.sub-title{
+    background-color: #0048a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 9px;
+    text-align: center;
+    text-transform: uppercase;
+    display: initial;
+}
+
+#search{
+    display: block;
+    background: #000;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: relative;
+    z-index: 3;
+    width: 70%;
+    height: 26px;
+    margin-top: 40px;
+}
+
+.padding-default{
+    padding: 20px;
 }
