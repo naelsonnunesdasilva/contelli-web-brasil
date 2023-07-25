@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo{
+    position: relative;
+    z-index: 2;
+}
+
+.container{
+    background-image: url('../body-background.jpg');
+    background-size: cover;
+    padding-top: 200px;
+    margin-top: -180px;
+}
