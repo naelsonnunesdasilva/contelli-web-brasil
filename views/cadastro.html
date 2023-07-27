@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contelli Web Brasil</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    {% include "./components/header.html" %}
+    <section class="container">
+        <main class="fluid-container">
+            <div class="center">
+                <h2 class="sub-title">Cadastro<img src="./icon-pencil.png" alt="Área de busca" title="Área de busca" />
+                </h2>
+            </div>
+
+            <form id="form-cadastro" method="POST" action="./sucesso">
+                <input type="text" id="nome" name="nome" placeholder="Nome Da Empresa..." required />
+                <div class="half-form margin-input">
+                    <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ..." required/>
+                    <input type="text" id="responsavel" name="responsavel" placeholder="Responsável..." />
+                </div>
+                <div class="half-form">
+                    <input type="text" id="tel" name="tel" placeholder="Tel..." />
+                    <input type="text" id="cel" name="cel" placeholder="Cel..." />
+                </div>
+                <div class="clear"></div>
+                <input type="text" id="endereco" name="endereco" placeholder="Endereço..." />
+                <div class="half-form margin-input">
+                    <input type="text" id="bairro" name="bairro" placeholder="Bairro..." />
+                </div>
+                <div class="half-form">
+                    <input type="text" id="complemento" name="complemento" placeholder="Complemento..." />
+                </div>
+                <div class="clear"></div>
+                <div class="quarter-form margin-input">
+                    <input type="text" id="uf" name="uf" placeholder="Uf" />
+                </div>
+                <div class="third-form margin-input">
+                    <input type="text" id="cep" name="cep" placeholder="CEP..." />
+                </div>
+                <div class="quarter-form margin-input">
+                    <input type="text" id="n" name="n" placeholder="Nº" />
+                </div>
+                <div class="third-form">
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade..." />
+                </div>
+                <input type="text" id="email" name="email" placeholder="E-mail..." />
+                <textarea id="descricao" name="descricao" placeholder="Observação..."></textarea>
+                <div class="center-input">
+                    <input type="text" id="n_cadastro" name="n_cadastro" placeholder="Nº De Cadastro" />
+                </div>
+                <input type="submit" id="btn-cad" value="Cadastrar" />
+            </form>
+        </main>
+    </section>
+</body>
+
+</html>

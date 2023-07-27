@@ -3,29 +3,91 @@
 
 <head>
     <title>Contelli Web Brasil</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://localhost:3000/css/style.css" />
 </head>
 
 <body>
-    <header>
-        <div class="fluid-container">
-            <h1>Contelli web Brasil</h1>
-            <div class="subheader">
-                <img src="./logo-duas-cores.png" alt="Contelli web Brasil" title="Contelli web Brasil" id="logo" />
-                <button id="login">Login</button>
-            </div>
-        </div>
-    </header>
+    {% include "./components/header.html" %}
     <section class="container">
         <main class="fluid-container">
             <div class="center">
-                <h2 class="sub-title">Área de busca</h2>
+                <h2 class="sub-title sub-title-home">Área de busca <img src="http://localhost:3000/icon-group.png"
+                        alt="Área de busca" title="Área de busca" /></h2>
             </div>
-            <div class="padding-default">
-                <input type="text" id="search" />
-            </div>
+            <form class="padding-default" method="get" action="http://localhost:3000/clients/cnpj">
+                <input type="text" name="cnpj" id="search" placeholder="Digite aqui o CNPJ" />
+            </form>
+
         </main>
     </section>
+
+    {% if client %}
+    <div id="results" class="center">
+        <div id="results-content" class="fluid-container padding-default">
+            <div class="exemplo-result">
+                {% if client.nome %}
+                    <p><b>Nome:</b> {{ client.nome }}</p>
+                {% endif %}
+
+                {% if client.cnpj %}
+                    <p><b>CNPJ:</b>{{ client.cnpj }}</p>
+                {% endif %}
+
+                {% if client.responsavel %}
+                    <p><b>Responsável:</b>{{ client.responsavel }}</p>
+                {% endif %}
+
+                {% if client.tel %}
+                    <p><b>Tel.:</b>{{ client.tel }}</p>
+                {% endif %}
+
+                {% if client.cel %}
+                    <p><b>Cel:</b>{{ client.cel }}</p>
+                {% endif %}
+
+                {% if client.endereco %}
+                    <p><b>Endereço:</b>{{ client.endereco }}</p>
+                {% endif %}
+
+                {% if client.bairro %}
+                    <p><b>Bairro:</b>{{ client.bairro }}</p>
+                {% endif %}
+
+                {% if client.complemento %}
+                    <p><b>Complemento:</b>{{ client.complemento }}</p>
+                {% endif %}
+
+                {% if client.uf %}
+                    <p><b>UF:</b>{{ client.uf }}</p>
+                {% endif %}
+
+                {% if client.cep %}
+                    <p><b>Cep:</b>{{ client.cep }}</p>
+                {% endif %}
+
+                {% if client.n %}
+                    <p><b>N°:</b>{{ client.n }}</p>
+                {% endif %}
+
+                {% if client.cidade %}
+                    <p><b>Cidade:</b>{{ client.cidade }}</p>
+                {% endif %}
+
+                {% if client.email %}
+                    <p><b>E-mail:</b>{{ client.email }}</p>
+                {% endif %}
+
+                {% if client.descricao %}
+                    <p><b>Observação:</b>{{ client.descricao }}</p>
+                {% endif %}
+
+                {% if client.n_cadastro %}
+                    <p><b>N° de Cadastro:</b>{{ client.n_cadastro }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </body>
 
 </html>

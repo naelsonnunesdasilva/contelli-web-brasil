@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.container{
+.clear{
+    clear: both;
+}
+
+.container {
     background-image: url('../body-background.jpg');
     background-size: cover;
     padding-top: 200px;
     margin-top: -252px;
 }
 
-.fluid-container{
+.fluid-container {
     max-width: 1200px;
     margin: 0px auto;
 }
@@ -25,20 +29,20 @@ header h1 {
     text-transform: uppercase;
 }
 
-.subheader{
+.subheader {
     width: 100%;
     margin-top: -59px;
     position: relative;
 }
 
-#logo{
+#logo {
     position: relative;
     z-index: 2;
     margin: 0px auto;
     display: block;
 }
 
-#login{
+#login {
     background-color: #0048a1;
     color: #fff;
     border-radius: 10px;
@@ -52,14 +56,15 @@ header h1 {
     font-size: 14px;
     text-transform: uppercase;
     z-index: 3;
+    text-decoration: none;
 }
 
-.center{
+.center {
     width: 100%;
     text-align: center;
 }
 
-.sub-title{
+.sub-title {
     background-color: #0048a1;
     color: #fff;
     border-radius: 10px;
@@ -67,9 +72,19 @@ header h1 {
     text-align: center;
     text-transform: uppercase;
     display: initial;
+    font-size: 31px;
 }
 
-#search{
+.sub-title-home{
+    margin-left: -32%;
+}
+
+.sub-title img {
+    width: 46px;
+    margin-bottom: -6px;
+}
+
+#search {
     display: block;
     background: #000;
     border: 2px solid #fff;
@@ -79,8 +94,103 @@ header h1 {
     width: 70%;
     height: 26px;
     margin-top: 40px;
+    padding: 0px 10px;
+    font-size: 16px;
 }
 
-.padding-default{
+.padding-default {
     padding: 20px;
+}
+
+#results{
+    width: 100%;
+    background-image: url('../result-background.png');
+    background-size: cover;
+}
+
+.exemplo-result{
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: left;
+}
+
+#form-cadastro{
+    width: 80%;
+    max-width: 900px;
+    margin: 0px auto;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+#form-cadastro input[type="text"]{
+    width: calc(100% - 20px);
+    border: 0px;
+    outline: 0px;
+    height: 26px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.half-form{
+    width: 48%;
+    float: left;
+}
+
+.quarter-form{
+    width: 15%;
+    float: left;
+}
+
+.third-form{
+    width: 29%;
+    float: left;
+}
+
+.margin-input{
+    margin-right: 4%;
+}
+
+#form-cadastro textarea{
+    width: calc(100% - 20px);
+    border: 0px;
+    outline: 0px;
+    height: 126px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.center-input{
+    width: 33%;
+    margin: 0px auto;
+}
+
+#form-cadastro input#btn-cad{
+    background-color: #0048a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 9px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-size: 28px;
+    border: 0px;
+    margin: 10px auto;
+}
+
+#sucess{
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0px;
+    font-size: 30px;
+    color: #fff;
 }
